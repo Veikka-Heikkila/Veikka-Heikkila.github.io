@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="UTF-8">
+        <title>Maantiedon esitelmä</title>
+    </head>
+    <body>
+        <nav id="navbar">
+            <div id="veke">
+                <h4>Rannikot</h4>
+            </div>
+            <ul>
+                <li id="first" onclick="home();">Otsikko</li>
+                <li id="second" onclick="games();">Sijainti</li>
+                <li id="third" onclick="channel();">Ilmasto</li>
+				<li id="fourth" onclick="luonnonVarat();">Luonnon<br>varat</li>
+				<li id="fifth" onclick="ymparistoOngelmat();">Ympäristö<br>ongelmat</li>
+				<li id="sixth" onclick="asutus();">Asutus</li>
+				<li id="seventh" onclick="muistiinPanot();">Muistiin<br>panot</li>
+            </ul>
+        </nav>
+        <div id="homeCont">
+            <div id="centDiv">
+                <h1 id="homeH">Rannikot</h1>
+                <h2 id="homeH2">elinympäristönä</h2>
+            </div>
+        </div>
+        <div id="gamesCont">
+            <h1 class="titleText">Sijainti - Samu<h1>
+        </div>
+        <div id="channelCont">
+            <h1 class="titleText">Ilmasto - Veikka</h1>
+			<img id="diag" src="ilmasto-diagrammi.jpg">
+			<ul>
+				<li>
+					Merten rannikoiden vesi nousee ja laskee säännöllisin väliajoin.
+					<ul>
+						<li>
+							Tätä ilmiötä kutsutaan vuorovedeksi.
+						</li>
+						<li>
+							Vuorovesi aiheutuu Kuun ja Auringon vetovoiman ja maapallon pyörimisen takia.
+						</li>
+						<li>
+							Laskuveden aikana merenpinta laskee normaalia matalammalle.
+						</li>
+						<li>
+							Nousuveden aikana merenpinta nousee normaalia korkeammalle.
+						</li>
+						<li>
+							Tämän ilmiön takia taloja ei rakenneta matalalle meren rannalle.
+						</li>
+					</ul>
+				</li>
+				<li class="marginRight">
+					Nousuveden aikaan tapahtuva myrsky nostattaa usein vaarallisen korkeita aaltoja.
+					<ul>
+						<li>
+							Myrsky huuhtoo rantaa ja siirtelee hiekkaa.
+						</li>
+					</ul>
+				</li>
+				<li class="marginRight">
+					Jäätikön sulaminen aiheuttaa merenpinnan nousua, joten rannikoilla ilmiö on pahimmillaan.
+				</li>
+				<li class="marginRight">
+					Ilmaston takia muuttamista kutsutaan ilmastopakolaisuudeksi.
+				</li>
+			</ul>
+        </div>
+		<div id="luoCont">
+            <h1 class="titleText">Luonnonvarat - Veikka</h1>
+			<img src="kala.jpg" id="kala">
+			<ul>
+				<li>
+					Rannikolta löytyy paljon luonnonvaroja.
+					<ul>
+						<li>
+							Luonnonvaroihin kuuluvat muun muassa kalat ja ravut.
+						</li>
+						<li>
+							Kalastus on maailmanlaajuisesti tärkeä elinkeino.
+						</li>
+						<li>
+							Kaloja on paljon pohjasta nousevien ravinteiden takia, joita nousee mannerjalustan alueella paljon.
+						</li>
+					</ul>
+				</li>
+				<li class="marginRight2">
+					Rannikon omistavalla valtiolla on oikeus käyttää oman <br>valtionsa mannerjalustaa.
+					<ul>
+						<li class="marginRight2">
+							Mannerjalusta on alle 200 metriä syvä merialue lähellä rantaa.
+						</li>
+						<li class="marginRight2">
+							Mannerjalustalta löydetään kaasu- ja öljyesiintymiä.
+						</li>
+					</ul>
+				</li>
+			</ul>
+        </div>
+		<div id="ympCont">
+            <h1 class="titleText">Ympäristöongelmat - Samu</h1>
+        </div>
+		<div id="asuCont">
+            <h1 class="titleText">Asutus - Veikka</h1>
+			<img id="asutus" src="farm.jpg">
+			<ul>
+				<li>
+					Noin puolet koko maailman väestöstä asuu rannikolla.
+					<ul>
+						<li>
+							Asutuksen määrä johtuu esimerkiksi rannikon soveltuvuudesta maanviljelyyn.
+						</li>
+						<li>
+							Rannikko houkuttelee paljon turisteja, sillä rannikolla on miellyttävä ilmasto ja pääsy mereen, joka sopii hyvin uimiseen ja surffaamiseen.
+						</li>
+					</ul>
+				</li>
+				<li class="marginRight3">
+					Maanviljely sujuu rannikolla hyvin laajojen suistoalueiden takia, jotka ovat ravinteikasta viljelymaata.
+				</li>
+				<li class="marginRight3">
+					Monet suurimmista kaupungeista sijaitsevat rannikolla.
+				</li>
+				<li class="marginRight3">
+					Hyvä meriliikenne helpottaa kaupankäyntiä.
+				</li>
+			</ul>
+        </div>
+		<div id="muiCont">
+            <h1 class="titleText">Muistiinpanot - Samu ja Veikka</h1>
+			<img src="kyla.jpg" id="kyla">
+			<ul>
+				<li>
+					Rannikot ovat merten rannassa.
+				</li>
+				<li>
+					Rannikolla on paljon asukkaita merenkulun ja maanviljelyn takia.
+				</li>
+				<li>
+					Kalastus, maanviljely ja kaupankäynti ovat yleisiä elinkeinoja.
+				</li>
+				<li>
+					Vuorovesi estää matalan rannan asutuksen.
+				</li>
+			</ul>
+        </div>
+        <script>
+            var homex = document.getElementById("homeCont");
+            var channelx = document.getElementById("channelCont");
+            var gamesx = document.getElementById("gamesCont");
+			var luox = document.getElementById("luoCont");
+			var ympx = document.getElementById("ympCont");
+			var asux = document.getElementById("asuCont");
+			var muix = document.getElementById("muiCont");
+			var firstx = document.getElementById("first");
+			var secondx = document.getElementById("second");
+			var thirdx = document.getElementById("third");
+			var fourthx = document.getElementById("fourth");
+			var fifthx = document.getElementById("fifth");
+			var sixthx = document.getElementById("sixth");
+			var seventhx = document.getElementById("seventh");
+			firstx.style.color = "#ffe0b3";
+            gamesx.style.display = "none";
+            channelx.style.display = "none";
+			luox.style.display = "none";
+			ympx.style.display = "none";
+			asux.style.display = "none";
+			muix.style.display = "none";
+            function home () {
+                homex.style.display = "block";
+                channelx.style.display = "none";
+                gamesx.style.display = "none";
+				luox.style.display = "none";
+				ympx.style.display = "none";
+				asux.style.display = "none";
+				muix.style.display = "none";
+				firstx.style.color = "#ffe0b3";
+				secondx.style.color = "#eeeeee";
+				thirdx.style.color = "#eeeeee";
+				fourthx.style.color = "#eeeeee";
+				fifthx.style.color = "#eeeeee";
+				sixthx.style.color = "#eeeeee";
+				seventhx.style.color = "#eeeeee";
+            }
+			function games () {
+                homex.style.display = "none";
+                channelx.style.display = "none";
+                gamesx.style.display = "block";
+				luox.style.display = "none";
+				ympx.style.display = "none";
+				asux.style.display = "none";
+				muix.style.display = "none";
+				firstx.style.color = "#eeeeee";
+				secondx.style.color = "#ffe0b3";
+				thirdx.style.color = "#eeeeee";
+				fourthx.style.color = "#eeeeee";
+				fifthx.style.color = "#eeeeee";
+				sixthx.style.color = "#eeeeee";
+				seventhx.style.color = "#eeeeee";
+            }
+            function channel () {
+                homex.style.display = "none";
+                channelx.style.display = "block";
+                gamesx.style.display = "none";
+				luox.style.display = "none";
+				ympx.style.display = "none";
+				asux.style.display = "none";
+				muix.style.display = "none";
+				firstx.style.color = "#eeeeee";
+				secondx.style.color = "#eeeeee";
+				thirdx.style.color = "#ffe0b3";
+				fourthx.style.color = "#eeeeee";
+				fifthx.style.color = "#eeeeee";
+				sixthx.style.color = "#eeeeee";
+				seventhx.style.color = "#eeeeee";
+            }
+			function luonnonVarat () {
+                homex.style.display = "none";
+                channelx.style.display = "none";
+                gamesx.style.display = "none";
+				luox.style.display = "block";
+				ympx.style.display = "none";
+				asux.style.display = "none";
+				muix.style.display = "none";
+				firstx.style.color = "#eeeeee";
+				secondx.style.color = "#eeeeee";
+				thirdx.style.color = "#eeeeee";
+				fourthx.style.color = "#ffe0b3";
+				fifthx.style.color = "#eeeeee";
+				sixthx.style.color = "#eeeeee";
+				seventhx.style.color = "#eeeeee";
+            }
+			function ymparistoOngelmat () {
+                homex.style.display = "none";
+                channelx.style.display = "none";
+                gamesx.style.display = "none";
+				luox.style.display = "none";
+				ympx.style.display = "block";
+				asux.style.display = "none";
+				muix.style.display = "none";
+				firstx.style.color = "#eeeeee";
+				secondx.style.color = "#eeeeee";
+				thirdx.style.color = "#eeeeee";
+				fourthx.style.color = "#eeeeee";
+				fifthx.style.color = "#ffe0b3";
+				sixthx.style.color = "#eeeeee";
+				seventhx.style.color = "#eeeeee";
+            }
+			function asutus () {
+                homex.style.display = "none";
+                channelx.style.display = "none";
+                gamesx.style.display = "none";
+				luox.style.display = "none";
+				ympx.style.display = "none";
+				asux.style.display = "block";
+				muix.style.display = "none";
+				firstx.style.color = "#eeeeee";
+				secondx.style.color = "#eeeeee";
+				thirdx.style.color = "#eeeeee";
+				fourthx.style.color = "#eeeeee";
+				fifthx.style.color = "#eeeeee";
+				sixthx.style.color = "#ffe0b3";
+				seventhx.style.color = "#eeeeee";
+            }
+			function muistiinPanot () {
+                homex.style.display = "none";
+                channelx.style.display = "none";
+                gamesx.style.display = "none";
+				luox.style.display = "none";
+				ympx.style.display = "none";
+				asux.style.display = "none";
+				muix.style.display = "block";
+				firstx.style.color = "#eeeeee";
+				secondx.style.color = "#eeeeee";
+				thirdx.style.color = "#eeeeee";
+				fourthx.style.color = "#eeeeee";
+				fifthx.style.color = "#eeeeee";
+				sixthx.style.color = "#eeeeee";
+				seventhx.style.color = "#ffe0b3";
+            }
+        </script>
+        <style>
+            * {
+                padding: 0px;
+                margin: 0px;
+            }
+            body {
+                display: flex;
+            }
+            nav ul {
+                list-style: none !important;
+            }
+            nav {
+                width: 10vw;
+                height: 100vh;
+                background-color: #262626;
+                color: #eeeeee;
+                margin: 0px;
+				position: fixed;
+				box-shadow: 20px 0px 10px -10px #060606;
+				z-index: 99999999999999999999999999999999999999999999999999;
+            }
+            nav li {
+                text-align: center;
+                padding-top: 2vh;
+                padding-bottom: 2vh;
+                transition: 0.3s;
+                cursor: default;
+            }
+            nav li:hover {
+                background-color: #424242 !important;
+				box-shadow: 0px 0px 10px 10px #121212;
+				z-index: 999;
+				cursor: pointer;
+            }
+			nav li:active {
+				box-shadow: 0px 0px 0px 0px #121212;
+			}
+            #veke {
+                text-align: center;
+            }
+            #veke h4 {
+				background-color: #262626;
+                padding-top: 5vh;
+                padding-bottom: 5vh;
+				cursor: default;
+				color: #91c9ff;
+			}
+            #homeCont {
+                width: 90vw;
+                height: 100vh;
+                background-color: #191919;
+                text-align: center;
+                color: #8fc7ff;
+                margin: 0px;
+				margin-left: 10vw;
+				z-index: 99999999;
+            }
+            #homeH {
+                background-color: #191919;
+                animation-name: homp;
+                animation-duration: 1s;
+                letter-spacing: 2px;
+            }
+            #homeH2 {
+                color: #eeeeee;
+            }
+            #centDiv {
+                margin-top: 35vh;
+            }
+            @keyframes homp {
+                0% {
+                    margin-bottom: -25px;
+                    opacity: 0;
+                    letter-spacing:0px;
+                }
+                50% {
+                    opacity: 0.3;
+                }
+                100% {
+                    margin-bottom: 0px;
+                    opacity: 1;
+                    letter-spacing: 2px;
+                }
+            }
+            #gamesCont {
+                width: 90vw;
+                height: 100vh;
+                background-color: #191919;
+                color: #eeeeee;
+                margin: 0px;
+				margin-left: 10vw;
+				z-index: 99999999;
+            }
+            #channelCont {
+                width: 90vw;
+                height: 100vh;
+                background-color: #191919;
+                color: #eeeeee;
+                margin: 0px;
+				margin-left: 10vw;
+				z-index: 99999999;
+            }
+			#luoCont {
+                width: 90vw;
+                height: 100vh;
+                background-color: #191919;
+                color: #eeeeee;
+                margin: 0px;
+				margin-left: 10vw;
+				z-index: 99999999;
+            }
+            #ympCont {
+                width: 90vw;
+                height: 100vh;
+                background-color: #191919;
+                color: #eeeeee;
+                margin: 0px;
+				margin-left: 10vw;
+				z-index: 99999999;
+            }
+			#asuCont {
+                width: 90vw;
+                height: 100vh;
+                background-color: #191919;
+                color: #eeeeee;
+                margin: 0px;
+				margin-left: 10vw;
+				z-index: 99999999;
+            }
+            #muiCont {
+                width: 90vw;
+                height: 100vh;
+                background-color: #191919;
+                color: #eeeeee;
+                margin: 0px;
+				margin-left: 10vw;
+				z-index: 99999999;
+            }
+            h1 {
+                font-size: 64px;
+            }
+            h2 {
+                font-size: 48px;
+            }
+            h4 {
+                font-size: 32px;
+            }
+            nav li {
+                font-size: 32px;
+				background-color: #323232;
+				position: relative;
+            }
+			.titleText {
+				text-align: center;
+				padding-top: 35px;
+				padding-bottom: 35px;
+				background-color: #2E2E2E;
+				color: #91c9ff;
+				box-shadow: 0px 20px 10px -10px #060606;
+				z-index: 9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;
+			}
+			#channelCont ul {
+				font-size: 26px;
+				margin-top: 30px;
+				margin-left: 60px;
+				margin-bottom: 30px;
+				margin-right: 60px;
+			}
+			#luoCont ul {
+				font-size: 28px;
+				margin-top: 30px;
+				margin-left: 60px;
+				margin-bottom: 30px;
+				margin-right: 60px;
+			}
+			#asuCont ul {
+				font-size: 28px;
+				margin-top: 30px;
+				margin-left: 60px;
+				margin-bottom: 30px;
+				margin-right: 60px;
+			}
+			#muiCont ul {
+				font-size: 28px;
+				margin-top: 30px;
+				margin-left: 60px;
+				margin-bottom: 30px;
+				margin-right: 60px;
+			}
+			#muiCont li {
+				font-size: 36px;
+				margin: 10px;
+			}
+			img {
+				position: absolute;
+				bottom: 0px;
+				right: 0px;
+			}
+			#diag {
+				width: 462px;
+				height: 297px;
+			}
+			.marginRight {
+				margin-right: 470px;
+			}
+			#kala {
+				width: 469px;
+				height: 313px;
+			}
+			.marginRight2 {
+				margin-right: 270px;
+			}
+			#asutus {
+				width: 726px;
+				height: 346px;
+			}
+			.marginRight3 {
+				margin-right: 700px;
+			}
+			#kyla {
+				width: 540px;
+				height: 358px;
+			}
+		</style>
+    <body>
+</html>
